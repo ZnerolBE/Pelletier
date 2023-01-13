@@ -1,3 +1,3 @@
 # Pelletier
 
-Tryout with bulma css.
+Small project for a fictitious store
