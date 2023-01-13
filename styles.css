@@ -24,8 +24,8 @@ nav {
     height: 20em;
 }
 
-.menu {
-    display: flex;
+#menu {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -37,26 +37,28 @@ nav {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    opacity: .95;
 }
 
-.menu li {
+#menu li {
     padding: 0.35em;
     cursor: pointer;
 }
 
-.menu box-icon {
+#menu box-icon {
     margin-right: 1em;
 }
 
-.menu a {
+#menu a {
     color: black;
     text-decoration: none;
 }
 
-.menu .exit {
+#menu .exit {
     position: absolute;
     top: 1em;
     right: 1em;
+    cursor: pointer;
 }
 
 .exit::after {
