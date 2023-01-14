@@ -1,7 +1,14 @@
+:root {
+    --clr-dark-gray: #31302b;
+    --clr-purple: #b12496; 
+    --clr-coral: #f47d65;
+}
+
 body {
     font-size: 62.5%;
     position: relative;
     font-family: "Merriweather", sans-serif;
+    color: var(--clr-dark-gray);
 }
 
 nav {
@@ -20,7 +27,7 @@ nav {
     font-size: 2.4rem;
     font-weight: 700;
     margin: auto;
-    color:rgb(28, 13, 6) ;
+    color: var(--clr-dark-gray);
     font-family: 'Abril Fatface', sans-serif;
 }
 
@@ -56,7 +63,7 @@ nav {
 }
 
 #menu a {
-    color: black;
+    color: var(--clr-dark-gray);
     text-decoration: none;
 }
 
@@ -90,22 +97,21 @@ nav {
     height: calc(100vh - 1em);
     overflow: hidden;
     z-index: 0;
-    /*
-    background-image: -moz-linear-gradient(320deg, rgb(240, 253, 140), rgb(248, 155, 73));
-
-    background-image: -webkit-linear-gradient(320deg, rgb(240, 253, 140), rgb(248, 155, 73));
-
-    background-image: linear-gradient(320deg, rgb(240, 253, 140), rgb(248, 155, 73));*/
 }
 
 h1 {
+    color: #31302b;
+    background-image: -webkit-linear-gradient(0deg, #31302b 0%,#b12496 33%,#f47d65 67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     font-size: 2.4rem;
     font-weight: 700;
     text-align: center;
     padding: 2rem;
     line-height: 4rem;
     position: relative;
-    color: rgb(26, 14, 2);
     text-shadow: rgba(62,66,66,0.2) 24px 10px 27px;
     z-index: 2;
 }
@@ -136,18 +142,47 @@ h1::after {
     width: 3em;
     height: 3em;
     z-index: 0;
+    opacity: .2;
 }
 
 h1 span.underlined {
 
     text-decoration-line: underline;
     text-decoration-style: "solid";
-    text-decoration-color: rgba(255,119,0,1);
-    text-decoration-thickness: 7px;
+    text-decoration-color: var(--clr-dark-gray);
+    text-decoration-thickness: 4px;
 }
 
 .subhead {
     padding: 3rem;
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button.primary-cta {
+    background: linear-gradient(to right, #31302b, #b12496, #f47d65); 
+    padding: 1em 2em;
+    border-radius: 5em;
+    border: 0;
+    color: snow;
+    font-weight: 600;
+    font-family: 'Roboto';
+    letter-spacing: .1rem;
+}
+
+button.secondary-cta {
+    border: 3px var(--clr-coral) solid;
+    border-radius: 5em;
+    padding: 1em 2em;
+    font-weight: 600;
+    font-family: 'Roboto';
+    letter-spacing: .1rem;
 }
