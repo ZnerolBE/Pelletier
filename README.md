@@ -6,3 +6,4 @@ Todo:
 
     - Make pricing based on quantity.
     - Add the correct Google fonts imports
+    - Glassmorph header

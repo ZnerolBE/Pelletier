@@ -101,7 +101,7 @@ nav {
 
 h1 {
     color: #31302b;
-    background-image: -webkit-linear-gradient(0deg, #31302b 0%,#b12496 33%,#f47d65 67%);
+    background-image: -webkit-linear-gradient(30deg, #31302b 0%,#b12496 33%,#f47d65 67%);
     background-clip: text;
     -webkit-background-clip: text;
     -text-fill-color: transparent;
@@ -185,4 +185,81 @@ button.secondary-cta {
     font-weight: 600;
     font-family: 'Roboto';
     letter-spacing: .1rem;
+}
+
+#hoe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    width: calc(100vw);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hoe-werkt-het {
+    margin: 0 1rem;
+}
+
+h2 {
+    color: #31302b;
+    background-image: -webkit-linear-gradient(30deg, #31302b 0%,#b12496 33%,#f47d65 67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+    line-height: 4rem;
+    position: relative;
+    text-shadow: rgba(62,66,66,0.2) 24px 10px 27px;
+    z-index: 2;
+}
+
+.hoe-werkt-het p {
+    padding: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.hoe-werkt-het li {
+    margin: 1.5em;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem; 
+    color: #616161;
+    position: relative;
+    text-align: center;
+}
+
+.hoe-werkt-het li::before {
+    content: url('./img/bxs-check-square.svg');
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+    opacity: .2;
+}
+
+p.tip {
+    position: relative;
+    line-height: 1.75rem;
+}
+
+p.tip::before {
+    content:'';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .15;
+    background-image: url('./img/pellets.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
 }
