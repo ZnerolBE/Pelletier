@@ -174,8 +174,9 @@ button.primary-cta {
     border: 0;
     color: snow;
     font-weight: 600;
-    font-family: 'Roboto';
-    letter-spacing: .1rem;
+    font-family: sans-serif;
+    letter-spacing: .05rem;
+    cursor: pointer;
 }
 
 button.secondary-cta {
@@ -183,8 +184,9 @@ button.secondary-cta {
     border-radius: 5em;
     padding: 1em 2em;
     font-weight: 600;
-    font-family: 'Roboto';
-    letter-spacing: .1rem;
+    font-family: sans-serif;
+    letter-spacing: .05rem;
+    cursor: pointer;
 }
 
 #hoe {
@@ -266,6 +268,23 @@ p.tip::before {
 
 /* PRICING SECTION */
 
+h3 {
+    color: #31302b;
+    background-image: -webkit-linear-gradient(30deg, #31302b 0%,#b12496 33%,#f47d65 67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+    line-height: 2rem;
+    position: relative;
+    text-shadow: rgba(62,66,66,0.2) 24px 10px 27px;
+    z-index: 2;
+}
+
 section#pellets {
     background-color: #fefefe;
     width: 90%;
@@ -280,4 +299,87 @@ section#pellets {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+}
+
+p.pellet-brand {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+p.short-desc {
+    color: #616161;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.pricing {
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    font-size: 1rem;
+    color: #616161;
+}
+
+.col-price{
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.col-price:before {
+    content: "€";
+    color: var(--clr-coral);
+    padding-right: .5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+input {
+    width: 4rem;
+    text-align: center;
+    border: 2px solid var(--clr-coral);
+    border-radius: 30px;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.current-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.buy-btn {
+    background: linear-gradient(to right, #31302b, #b12496, #f47d65); 
+    padding: 1em 2em;
+    border-radius: 5em;
+    border: 0;
+    color: snow;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: .05rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
