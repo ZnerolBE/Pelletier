@@ -263,3 +263,21 @@ p.tip::before {
     background-position: 50% 0;
 
 }
+
+/* PRICING SECTION */
+
+section#pellets {
+    background-color: #fefefe;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pellets-kopen {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
